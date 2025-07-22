@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Responsive Portfolio Website HTML CSS| CodingNepal</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <script
+      src="https://kit.fontawesome.com/26dc999c27.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <!-- Move to up button -->
+    <div class="scroll-button">
+      <a href="#home"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <!-- navgaition menu -->
+    <nav>
+      <div class="navbar">
+        <div class="logo"><a href="#">Portfolio.</a></div>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </ul>
+        <div class="media-icons">
+          <a href="https://www.linkedin.com/in/rakshatiwari48/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/RakshaTiwari921"
+            ><i class="fa-brands fa-square-github"></i
+          ></a>
+          <a href="https://www.hackerrank.com/profile/tiwariraksha92"
+            ><i class="fa-brands fa-hackerrank"></i
+          ></a>
+        </div>
+      </div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- Home Section Start -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <div class="text">
+          <div class="text-one">Hello,</div>
+          <div class="text-two">I'm Raksha Tiwari</div>
+          <div class="text-three">Web Developer</div>
+          <div class="text-four">From Bangalore</div>
+        </div>
+        <a
+          href="/Images/RakshaTiwari_Resume.pdf"
+          class="resume-button"
+          target="_blank"
+          >Resume</a
+        >
+      </div>
+    </section>
+
+    <!-- About Section Start -->
+    <section class="about" id="about">
+      <div class="content">
+        <div class="title"><span>About Me</span></div>
+        <div class="about-details">
+          <div class="left">
+            <img src="/Images/RakshaTiwari_Photo.jpg" alt="" />
+          </div>
+          <div class="right">
+            <div class="topic">Hi, I'm Raksha Tiwari</div>
+            <p>
+              A dedicated Front-End Web Developer with a strong foundation in
+              HTML, CSS, JavaScript, and hands-on experience building responsive
+              web applications using React. I enjoy bringing clean UI designs to
+              life and solving real-world problems through code. Over the past
+              few months, I've built several resume-worthy projects.
+              <br /><br />
+              I take pride in writing clean, maintainable code, and continuously
+              strive to learn new tools and best practices in web development.
+              <br /><br />
+              Currently, I'm focused on landing a front-end developer role where
+              I can contribute meaningfully, grow alongside a talented team, and
+              build digital products that make a difference. <br /><br />
+              Let's connect and create something impactful together!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Skill Section Start -->
+    <!-- Section Tag and Other Div will same where we need to put same CSS -->
+    <section class="skills" id="skills">
+      <div class="content">
+        <div class="title"><span>My Skills</span></div>
+        <div class="skills-details">
+          <div class="boxes">
+            <div class="box">
+              <div class="topic"><i class="fab fa-html5"></i> HTML</div>
+              <span class="tier advanced">Advanced</span>
+              <small>4 Projects</small>
+            </div>
+
+            <div class="box">
+              <div class="topic"><i class="fab fa-css3-alt"></i> CSS</div>
+              <span class="tier advanced">Advanced</span>
+              <small>4 Projects</small>
+            </div>
+
+            <div class="box">
+              <div class="topic"><i class="fab fa-js"></i> JavaScript</div>
+              <span class="tier intermediate">Intermediate</span>
+              <small>4 Projects</small>
+            </div>
+
+            <div class="box">
+              <div class="topic"><i class="fab fa-react"></i>React</div>
+              <span class="tier beginner">Beginner</span>
+              <small>2 Projects</small>
+            </div>
+
+            <div class="box">
+              <div class="topic"><i class="fab fa-bootstrap"></i>Bootstrap</div>
+              <span class="tier beginner"></i>Beginner</span>
+              <small>1 Project</small>
+            </div>
+
+            <div class="box">
+              <div class="topic"><i class="fab fa-python"></i>Python</div>
+              <span class="tier beginner">Beginner</span>
+              <small>1 Project</small>
+            </div>
+            <div class="box">
+              <div class="topic">Flask</div>
+              <span class="tier beginner">Beginner</span>
+              <small>1 Project</small>
+            </div>
+            <div class="box">
+              <div class="topic"><i class="fas fa-database"></i>SQL</div>
+              <span class="tier intermediate">Intermediate</span>
+              <!-- <small>1 Project</small> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Projects Section Start -->
+    <!-- ==== Projects Section ==== -->
+    <section class="services projects" id="projects">
+      <div class="content">
+        <div class="title"><span>My Projects</span></div>
+
+        <div class="boxes">
+          <!-- Weather App -->
+          <a class="box" data-modal="weather">
+            <div class="icon"><i class="fas fa-cloud-sun"></i></div>
+            <div class="topic">Weather App</div>
+            <p>Real‑time weather with OpenWeather API and geolocation.</p>
+          </a>
+
+          <!-- To Do List -->
+          <div class="box" data-modal="todo">
+            <div class="icon">
+              <i class="fas fa-tasks"></i>
+            </div>
+            <div class="topic">To-Do List</div>
+            <p>Simple to-do app with add/delete and persistent tasks.</p>
+          </div>
+
+          <!-- Age Calculator -->
+          <div class="box" data-modal="agecalc">
+            <div class="icon">
+              <i class="fas fa-birthday-cake"></i>
+            </div>
+            <div class="topic">Age Calculator</div>
+            <p>Calculate your age from your birthdate instantly.</p>
+          </div>
+          
+          <!-- Task Manager -->
+          <div class="box" data-modal="taskmanager">
+            <div class="icon">
+              <i class="fas fa-tasks"></i>
+            </div>
+            <div class="topic">Task Manager</div>
+            <p>Manage daily tasks with add/edit/delete functionality using React.</p>
+          </div>
+
+          <!-- Movie App -->
+          <div class="box" data-modal="movieapp">
+            <div class="icon">
+              <i class="fas fa-film"></i>
+            </div>
+            <div class="topic">Movie App</div>
+            <p>Browse and search movies using the TMDb API in a React SPA.</p>
+          </div>
+
+          <div class="box" data-modal="firebaseauth">
+            <div class="icon">
+              <i class="fas fa-user-lock"></i>
+            </div>
+            <div class="topic">Firebase Auth</div>
+            <p>User authentication with Firebase including protected routes in React.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Me section Start -->
+    <section class="contact" id="contact">
+      <div class="content">
+        <div class="title"><span>Contact Me</span></div>
+        <div class="text">
+          <div class="topic">Let’s get in touch!</div>
+          <p>You can reach me at:</p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:tiwariraksha92@gmail.com"
+              >tiwariraksha92@gmail.com</a
+            >
+          </p>
+          <div class="button">
+            <a href="mailto:tiwariraksha92@gmail.com" class="mail-button"
+              >Mail Me</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section Start -->
+    <footer>
+      <div class="text">
+        <span
+          >Created By <a href="#">Raksha Tiwari</a> | &#169; 2025 All Rights
+          Reserved</span
+        >
+      </div>
+    </footer>
+
+    <!-- ===== Modal ===== -->
+    <div id="project-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modal-body"><!-- JS injects project details here --></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
